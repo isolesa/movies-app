@@ -2,7 +2,7 @@
 <div *ngFor="let movie of sortedByDate; let i = index">
     <div *ngIf="i < 2">
         <div class="card mb-3">
-            <img class="card-img-top" src="../../assets/images/{{ movie.imageHome }}" alt="Card image cap">
+            <img class="card-img-top" src="assets/images/{{ movie.imageHome }}" alt="{{ movie.key }}">
             <div class="card-img-overlay imageCustom">
                 <h4 class="card-title"><a routerLink="/movies/{{ movie.key }}">{{ movie.name }}</a></h4>
                 <h6 class="card-text">{{ movie.releaseDate }}</h6>
