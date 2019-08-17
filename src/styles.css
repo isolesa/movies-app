@@ -1,0 +1,66 @@
+.my-custom{
+    background-color:#152f4f !important;
+    -webkit-box-shadow: 0px 24px 140px -16px rgba(21,47,79,1);
+    -moz-box-shadow: 0px 24px 140px -16px rgba(21,47,79,1);
+    box-shadow: 0px 24px 140px -16px rgba(21,47,79,1);
+}
+.nav-item{
+    min-width:6vw;
+}
+main{
+    min-height:85vh;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.card-custom{
+    width:21rem;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.credits h6{
+    font-weight: initial;
+}
+.latestTitle{
+    margin-bottom: 60px;
+}
+.imageCustom{
+    color:white;
+}
+.imageCustom h4 a{
+    text-decoration: none !important;
+    color:white !important;
+}
+.footer{
+    background: #152f4f;
+    color: white;
+}
+.footer .links ul{
+    list-style-type: none;
+}
+.footer .links li a{
+    color: white;
+    transition: color 0.2s;
+}
+.footer .links li a:hover{
+    text-decoration: none;
+    color: #4180cb;
+}
+.footer .about-company i{
+    font-size: 25px;
+}
+.footer .about-company a{
+    color: white;
+    transition: color 0.2s;
+}
+.footer .about-company a:hover{
+    color: #4180cb;
+}
+.footer .location i{
+    font-size: 18px;
+}
+.footer .copyright p{
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.about-company, .links{
+    margin-bottom: 40px;
+}

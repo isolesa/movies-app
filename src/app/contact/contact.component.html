@@ -1,0 +1,86 @@
+<h2 style="margin-bottom:40px;">Contact us</h2>
+<form [formGroup]="form" (submit)="save()">
+    <div *ngIf="form.errors" class="alert alert-danger">Something went wrong. Check the input fields.</div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Username</label>
+            <input 
+            formControlName="username"
+            type="text" 
+            class="form-control" 
+            id="inputEmail4" 
+            placeholder="Username">
+            <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
+                <div *ngIf="username.errors.required">Username is required.</div>
+                <div *ngIf="username.errors.minlength">
+                    Username should be minimum {{ username.errors.minlength.requiredLength }} characters.
+                </div>
+                <div *ngIf="username.errors.cannotContainSpace">
+                    {{ username.errors.cannotContainSpace.message }}
+                </div>
+            </div> 
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Email</label>
+            <input 
+            formControlName="email"
+            type="email" 
+            class="form-control" 
+            id="inputPassword4" 
+            placeholder="Email">
+            <div *ngIf="email.touched && email.invalid" class="alert alert-danger">
+                <div *ngIf="email.errors.required">Email is required.</div>
+                <div *ngIf="email.errors.minlength">
+                    Email should be minimum {{ email.errors.minlength.requiredLength }} characters.
+                </div>
+                <div *ngIf="email.errors.email">
+                    Email is in the wrong format.
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Subject</label>
+        <input 
+        formControlName="subject"
+        type="text" 
+        class="form-control" 
+        id="inputAddress" 
+        placeholder="What your message is about?">
+        <div 
+        *ngIf="subject.touched && subject.invalid"
+        class="alert alert-danger">Subject is required.</div>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea 
+        formControlName="message"
+        class="form-control" 
+        id="exampleFormControlTextarea1" 
+        rows="3"></textarea>
+        <div *ngIf="message.touched && message.invalid" class="alert alert-danger">
+            <div *ngIf="message.errors.required">
+                You must write a message. Otherwise, this doesn't make much sense.
+            </div>
+            <div *ngIf="message.errors.maxlength">
+                Keep it simple. Not more then {{ message.errors.maxlength.requiredLength }} characters, please.
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input 
+            formControlName="subscribe"
+            class="form-check-input" 
+            type="checkbox" 
+            id="gridCheck">
+            <label class="form-check-label" for="gridCheck">Subscribe to our newsletter</label>
+        </div>
+    </div>
+    <button 
+    type="submit" 
+    class="btn btn-primary" 
+    style="min-width: 220px; background-color:#152f4f !important;"
+    [disabled]="!form.valid">
+    Send</button>
+</form>

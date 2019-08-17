@@ -1,0 +1,17 @@
+<div class="row">
+    <ng-container *ngFor="let movie of movies; let i = index">
+        <div class="col">
+            <div class="card card-custom">
+                <img class="card-img-top" src="../../assets/images/{{ movie.imageSmall }}" [alt]="movie.key">
+                <div class="card-body">
+                    <h5 class="card-title"><a [routerLink]="['/movies/', movie.key]" style="color: #152f4f;">{{ movie.name }}</a></h5>
+                    <actors [actors]="movie.actors"></actors>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Release date: {{ movie.releaseDate }}</small>
+                </div>
+            </div>
+        </div>
+        <div class="w-100" *ngIf="(i + 1) % 3 === 0"></div>
+    </ng-container>
+</div>
