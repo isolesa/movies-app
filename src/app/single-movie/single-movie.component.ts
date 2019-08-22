@@ -13,13 +13,14 @@ export class SingleMovieComponent implements OnInit {
   movie;
 
   constructor(private route: ActivatedRoute, private moviesService: MoviesService){
+  }
+  
+  ngOnInit(){
     let movieParam = this.route.snapshot.paramMap.get("movie");
     if(movieParam){
       this.moviesService.getMovie(movieParam).pipe(take(1)).subscribe(response => {
       this.movie = response;
     });
   }
-  }
-  
-  ngOnInit(){};
+  };
 }
