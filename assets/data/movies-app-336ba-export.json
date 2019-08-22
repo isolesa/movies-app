@@ -1,0 +1,150 @@
+{
+  "categories" : {
+    "movies" : {
+      "a-beautiful-mind" : {
+        "actors" : {
+          "ed-harris" : {
+            "actorId" : 0,
+            "name" : "Ed Harris"
+          },
+          "russell-crowe" : {
+            "actorId" : 1,
+            "name" : "Russell Crowe"
+          }
+        },
+        "imageSmall" : "beautiful-mind.jpg",
+        "movieId" : 0,
+        "name" : "A Beautiful Mind",
+        "releaseDate" : "4 January 2002"
+      },
+      "avengers-endgame" : {
+        "actors" : {
+          "chris-evans" : {
+            "actorId" : 11,
+            "name" : "Chris Evans"
+          },
+          "robert-downey-jr" : {
+            "actorId" : 10,
+            "name" : "Robert Downey Jr."
+          }
+        },
+        "imageSmall" : "avengers-endgame.jpg",
+        "movieId" : 6,
+        "name" : "Avengers: Endgame",
+        "releaseDate" : "26 April 2019"
+      },
+      "gladiator" : {
+        "actors" : {
+          "joaquin-phoenix" : {
+            "actorId" : 5,
+            "name" : "Joaquin Phoenix"
+          },
+          "russell-crowe" : {
+            "actorId" : 1,
+            "name" : "Russell Crowe"
+          }
+        },
+        "imageSmall" : "gladiator.jpg",
+        "movieId" : 3,
+        "name" : "Gladiator",
+        "releaseDate" : "5 May 2000"
+      },
+      "inception" : {
+        "actors" : {
+          "joseph-gordon-levitt" : {
+            "actorId" : 2,
+            "name" : "Joseph Gordon-Levitt"
+          },
+          "leonardo-dicaprio" : {
+            "actorId" : 3,
+            "name" : "Leonardo DiCaprio"
+          }
+        },
+        "imageSmall" : "inception.jpg",
+        "movieId" : 1,
+        "name" : "Inception",
+        "releaseDate" : "16 July 2010"
+      },
+      "pulp-fiction" : {
+        "actors" : {
+          "john-travolta" : {
+            "actorId" : 8,
+            "name" : "John Travolta"
+          },
+          "uma-thurman" : {
+            "actorId" : 9,
+            "name" : "Uma Thurman"
+          }
+        },
+        "imageSmall" : "pulp-fiction.jpg",
+        "movieId" : 5,
+        "name" : "Pulp Fiction",
+        "releaseDate" : "14 October 1994"
+      },
+      "taxi-driver" : {
+        "actors" : {
+          "jodie-foster" : {
+            "actorId" : 15,
+            "name" : "Jodie Foster"
+          },
+          "robert-de-niro" : {
+            "actorId" : 14,
+            "name" : "Robert De Niro"
+          }
+        },
+        "imageSmall" : "taxi-driver.jpg",
+        "movieId" : 8,
+        "name" : "Taxi Driver",
+        "releaseDate" : "9 February 1976"
+      },
+      "the-basketball-diaries" : {
+        "actors" : {
+          "leonardo-dicaprio" : {
+            "actorId" : 3,
+            "name" : "Leonardo DiCaprio"
+          },
+          "lorraine-bracco" : {
+            "actorId" : 4,
+            "name" : "Lorraine Bracco"
+          }
+        },
+        "imageSmall" : "the-basketball-diaries.jpg",
+        "movieId" : 2,
+        "name" : "The Basketball Diaries",
+        "releaseDate" : "21 April 1995"
+      },
+      "the-hateful-eight" : {
+        "actors" : {
+          "kurt-russell" : {
+            "actorId" : 13,
+            "name" : "Kurt Russell"
+          },
+          "samuel-l-jackson" : {
+            "actorId" : 12,
+            "name" : "Samuel L. Jackson"
+          }
+        },
+        "imageSmall" : "the-hateful-eight.jpg",
+        "movieId" : 7,
+        "name" : "The Hateful Eight",
+        "releaseDate" : "30 December 2015"
+      },
+      "the-pianist" : {
+        "actors" : {
+          "adrien-brody" : {
+            "actorId" : 6,
+            "name" : "Adrien Brody"
+          },
+          "thomas-kretschmann" : {
+            "actorId" : 7,
+            "name" : "Thomas Kretschmann"
+          }
+        },
+        "imageSmall" : "the-pianist.jpg",
+        "movieId" : 4,
+        "name" : "The Pianist",
+        "releaseDate" : "28 March 2003"
+      }
+    }
+  }
+}
